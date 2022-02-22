@@ -1,0 +1,27 @@
+--- 
+ - hosts: localhost
+   tasks:
+    - name: listing  present working directory 
+      shell: pwd
+      register: output1
+    - name: debuging output1
+      debug: 
+       var: output1 
+    - name: first task - ls 
+      shell: ls
+    - name: second task - mkdir 
+      shell: mkdir Practice
+    - name: Change Directory to Practice directory
+      shell: cd Practice
+    - name: create a file inside Practice - Welcome.txt
+      shell: touch ./Practice/Welcome.txt
+    - name: Make new Directory 
+      shell: mkdir Deploy 
+    - name: copy Welcome.txt to New Directoy Deploy
+      shell: cp ./Practice/Welcome.txt ./Deploy
+    - name: Add some text to Welcome.txt 
+      shell: echo "Welcome to Ansible 1st playbook" >> ./Deploy/Welcome.txt   
+    - name: Change to Deploy Directory 
+      shell: cd Deploy 
+    - name: list containt of directory Deploy
+      shell: ls
