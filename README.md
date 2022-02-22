@@ -2,15 +2,18 @@
 First Ansible playbook command sample
 # This first ansible playbook is for learning to execute unix command in local machine where ansible is installed. 
 
-Step A 
-Installations & Environment Setup Steps
-1. Install Ansible latest to your control machine 
-(Control machine is your laptop or any computer from where you will execute command)
+#Step A 
+
+Installations & Environment Setup
+
+1. Install latest Ansible program to your control machine 
+(Control machine is your laptop or any computer from where you will execute command, in real environment the executed command will be implemented in remot hosts, usually severs in cloud or your your private data center where you will concigure your ansible to long in using SSH)
 
 2. To check the verison of Ansible and locan of executable ansible, library and plougins, use below command; 
 $ansible --version (if you see detailed output your install is succeded)
 
-Step B
+#Step B
+
 3. Creat any directory  in your machine to setup ansible playbook and enviroment eg. 
         ---anisble3
 
