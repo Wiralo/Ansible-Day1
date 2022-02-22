@@ -1,6 +1,6 @@
 # Ansible-Day1
 First Ansible playbook command sample
-# This first ansible playbook is for learning to executive unix command in local machine
+# This first ansible playbook is for learning to execute unix command in local machine where ansible is installed. 
 
 Step A 
 Installations & Environment Setup Steps
